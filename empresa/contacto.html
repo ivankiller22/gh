@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+      <style>
+        nav ul {
+         display: flex;
+         list-style: none;
+         gap: 20px;   
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #2C1E16;
+            display: inline-block;
+            padding: 6px 12px;
+            border: 1px solid #2C1E16;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body background="img/fondo.jpg">
+     <header>
+        <nav style="background-color: white; border:2px solid; padding: 20px;">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <h1 style="color: red;">Contáctanos</h1>
+    <form>
+        <label for="email">Correo Electrónico:</label><br><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+   <label for="asunto">Asunto:</label><br>
+<input type="text" id="asunto" name="asunto" list="lista-asuntos" placeholder="Selecciona o escribe un asunto...">
+<datalist id="lista-asuntos">
+    <option value="Soporte">
+    <option value="Hoja de Reclamaciones">
+    <option value="Ayuda">
+    <option value="Devoluciones">
+</datalist><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <img src="img/contacto.jpg">
+    
+       <footer>
+        <p>&copy; 2026 Pizzería Don Tomate — Calle Mayor, 24, Caravaca de la Cruz (Murcia)</p>
+    </footer>
+</body>
+</html>
